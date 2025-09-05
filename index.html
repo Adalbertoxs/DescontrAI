@@ -1,109 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DescontrAI</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <title>Projeto STR - Landing Page</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      rel="icon"
-      type="image/png"
-      href="assets/ChatGPT Image 29 de ago. de 2025, 01_20_13.png"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
     />
   </head>
-
   <body>
-    <div class="logo">
-      <img
-        src="assets/ChatGPT Image 29 de ago. de 2025, 01_20_13.png"
-        alt="Logo do Site"
-      />
-    </div>
+    <!-- Canvas para partículas -->
+    <canvas id="particles"></canvas>
 
-    <div class="wrapper">
-      <span class="rotate-bg"></span>
-      <span class="rotate-bg2"></span>
+    <header>
+      <h1>Projeto STR</h1>
+      <button class="login-btn" onclick="location.href='login.html'">
+        Login
+      </button>
+    </header>
 
-      <div class="form-box login">
-        <h2 class="title animation" style="--i: 0; --j: 21">Login</h2>
-        <form action="#">
-          <div class="input-box animation" style="--i: 1; --j: 22">
-            <input type="email" required />
-            <label for="">Email</label>
-            <i class="bx bxs-user"></i>
-          </div>
-
-          <div class="input-box animation" style="--i: 2; --j: 23">
-            <input type="password" required />
-            <label for="">Senha</label>
-            <i class="bx bxs-lock-alt"></i>
-          </div>
-          <button type="submit" class="btn animation" style="--i: 3; --j: 24">
-            Login
-          </button>
-          <div class="linkTxt animation" style="--i: 5; --j: 25">
-            <p>
-              Ainda não possui conta ?
-              <a href="#" class="register-link">Registre-se</a>
-            </p>
-          </div>
-        </form>
-      </div>
-
-      <div class="info-text login">
-        <h2 class="animation" style="--i: 0; --j: 20">Bem vindo de volta!</h2>
-        <p class="animation" style="--i: 1; --j: 21">
-          Sua música, seu mundo! Entre e sinta o som.
+    <!-- Hero Section -->
+    <section class="hero animate">
+      <div class="hero-text">
+        <h2>Bem-vindo ao Projeto de ESOF</h2>
+        <p>
+          Monitoramento visual de séries históricas em tempo real, com
+          tecnologia avançada e interface intuitiva.
         </p>
+        <a href="#sobre" class="cta-btn">Saiba Mais</a>
       </div>
-
-      <div class="form-box register">
-        <h2 class="title animation" style="--i: 17; --j: 0">Registre-se</h2>
-
-        <form action="#">
-          <div class="input-box animation" style="--i: 18; --j: 1">
-            <input type="text" required />
-            <label for="">Nome</label>
-            <i class="bx bxs-user"></i>
-          </div>
-
-          <div class="input-box animation" style="--i: 19; --j: 2">
-            <input type="email" required />
-            <label for="">Email</label>
-            <i class="bx bxs-envelope"></i>
-          </div>
-
-          <div class="input-box animation" style="--i: 20; --j: 3">
-            <input type="password" required />
-            <label for="">Senha</label>
-            <i class="bx bxs-lock-alt"></i>
-          </div>
-
-          <button type="submit" class="btn animation" style="--i: 21; --j: 4">
-            Sign Up
-          </button>
-
-          <div class="linkTxt animation" style="--i: 22; --j: 5">
-            <p>
-              Já possui uma conta ? <a href="#" class="login-link">Login</a>
-            </p>
-          </div>
-        </form>
+      <div class="hero-logo">
+        <img
+          src="/assets/ChatGPT Image 29 de ago. de 2025, 01_20_13.png"
+          alt="Logo do Projeto ESOF"
+        />
       </div>
+    </section>
 
-      <div class="info-text register">
-        <h2 class="animation" style="--i: 17; --j: 0">
-          Leva menos de 1 minuto.
-        </h2>
-        <p class="animation" style="--i: 18; --j: 1">
-          Crie sua conta e explore o futuro da música com a gente.
+    <main>
+      <section id="sobre" class="animate">
+        <h2>Sobre o Projeto</h2>
+        <p>
+          O DescontrAI é um aplicativo voltado para quem busca profissionais do
+          ramo musical e espaços para eventos. A plataforma conecta contratantes
+          a músicos, DJs e casas de show, oferecendo recursos como filtros de
+          busca, solicitação de datas, contratos digitais, pagamentos seguros e
+          chat integrado. O objetivo é expandir o mercado de eventos de forma
+          prática e acessível, aproximando artistas e clientes em uma única
+          solução.
         </p>
-      </div>
-    </div>
+      </section>
+
+      <section id="integrantes" class="animate">
+        <h2>Integrantes</h2>
+        <p>
+          O projeto foi desenvolvido por: Adalberto S Pereira, Emanuel C Simões
+          e Andreey Coutinho, cada um contribuindo em diferentes módulos do
+          sistema.
+        </p>
+      </section>
+
+      <section id="disciplina" class="animate">
+        <h2>Disciplina</h2>
+        <p>
+          O projeto faz parte da disciplina de Engenharia de Software (ESOF),
+          voltada para o desenvolvimento de projetos.
+        </p>
+      </section>
+
+      <section id="professor" class="animate">
+        <h2>Professor</h2>
+        <p>
+          O orientador do projeto é o Prof. Alexandre Cardoso, que supervisiona
+          o desenvolvimento, orienta a equipe e fornece feedback contínuo sobre
+          o progresso do trabalho.
+        </p>
+      </section>
+
+      <section id="cards" class="animate">
+        <h2>Gêneros musicais</h2>
+        <div class="cards-container">
+          <div class="card">
+            <div class="wrapper">
+              <img src="./assets/forro.jpg" class="cover-image" />
+            </div>
+            <img src="./assets/forrotittle.png" class="title" />
+            <img src="./assets/instrumento-forro.png" class="character" />
+          </div>
+
+          <div class="card">
+            <div class="wrapper">
+              <img src="./assets/funk.avif" class="cover-image" />
+            </div>
+            <img src="./assets/funktittle.png" class="title" />
+            <img src="./assets/instrumento-funk.png" class="character" />
+          </div>
+
+          <div class="card">
+            <div class="wrapper">
+              <img src="./assets/jazz.jpg" class="cover-image" />
+            </div>
+            <img src="./assets/jazztittle.png" class="title" />
+            <img src="./assets/instrumento-jazz.png" class="character" />
+          </div>
+
+          <div class="card">
+            <div class="wrapper">
+              <img src="./assets/musica-eletronica.jpg" class="cover-image" />
+            </div>
+            <img src="./assets/eletronicattile.png" class="title" />
+            <img src="./assets/instrumento-eletronica.png" class="character" />
+          </div>
+
+          <div class="card">
+            <div class="wrapper">
+              <img src="./assets/pagode.jpeg" class="cover-image" />
+            </div>
+            <img src="./assets/pagodetittle.png" class="title" />
+            <img src="./assets/instrumento-pagode.png" class="character" />
+          </div>
+
+          <div class="card">
+            <div class="wrapper">
+              <img src="./assets/rock.jpg" class="cover-image" />
+            </div>
+            <img src="./assets/rocktittle.png" class="title" />
+            <img src="./assets/instrumento-rock.png" class="character" />
+          </div>
+
+          <div class="card">
+            <div class="wrapper">
+              <img src="./assets/samba.jpg" class="cover-image" />
+            </div>
+            <img src="./assets/sambatittle.png" class="title" />
+            <img src="./assets/instrumento-samba.png" class="character" />
+          </div>
+
+          <div class="card">
+            <div class="wrapper">
+              <img src="./assets/sertanejo.jpg" class="cover-image" />
+            </div>
+            <img src="./assets/sertanejotittle.png" class="title" />
+            <img src="./assets/instrumento-sertanejo.png" class="character" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2025 Projeto ESOF - Todos os direitos reservados</footer>
 
     <script src="script.js"></script>
   </body>
