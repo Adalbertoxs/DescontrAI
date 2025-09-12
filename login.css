@@ -340,8 +340,37 @@ form .linkTxt {
   }
 
   .wrapper {
+    width: 95%; /* Ocupa 95% da largura da tela */
+    height: auto; /* A altura se ajusta ao conteúdo do formulário */
     margin-top: 50px;
     min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Mantém o overflow hidden */
+  }
+
+  /* Esconde os elementos decorativos para simplificar a interface */
+  .wrapper .info-text {
+    display: none;
+  }
+
+  .wrapper .rotate-bg,
+  .wrapper .rotate-bg2 {
+    display: none;
+  }
+
+  /* Faz o formulário ocupar toda a largura disponível */
+  .wrapper .form-box {
+    width: 100%;
+    position: relative; /* Ajusta a posição */
+    padding: 0 25px; /* Ajusta o padding interno */
+  }
+
+  /* Garante que o formulário de registro apareça corretamente */
+  .wrapper.active .form-box.register {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .form-box h2 {
